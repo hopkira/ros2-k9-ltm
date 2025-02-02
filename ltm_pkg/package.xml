@@ -8,9 +8,9 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <exec_depend>rclpy</exec_depend>
-  <exec_depend>python3-ollama-pip</exec_depend>
-  <exec_depend>python3-pandas</exec_depend>
+  <depend>rclpy<depend>
+  <depend>python3-ollama-pip<depend>
+  <depend>python3-pandas<depend>
   
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
@@ -21,5 +21,8 @@
 
   <export>
     <build_type>ament_cmake</build_type>
+    <exec_depend>itm_query</exec_depend>
+    <exec_depend>itm_remember</exec_depend>
+    <exec_depend>itm_set_model</exec_depend>
   </export>
 </package>

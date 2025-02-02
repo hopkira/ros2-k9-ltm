@@ -22,7 +22,7 @@ class LongTermMemoryService(Node):
         self._set_model_srv = self._node.create_service(LtmSetModel, 'ltm_set_model', self.set_model_callback)
         self._query_srv = self._node.create_service(LtmQuery, 'ltm_query', self.query_callback)
         self._remember_srv = self._node.create_service(LtmRemember, 'ltm_remember', self.remember_callback)
-        df = pd.read_csv('k9_stories_500.csv')
+        df = pd.read_csv('../resources/k9_stories_500.csv')
         print(f"{len(df)} rows in the data.")
         df.sample(5)
         self.add_documents(df['synopsis'])
