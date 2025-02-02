@@ -1,0 +1,7 @@
+uint8 GEN_MODEL=0
+uint8 EMBED_MODEL=1
+
+uint8 model_type
+string model_name
+---
+bool success

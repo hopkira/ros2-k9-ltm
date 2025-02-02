@@ -1,0 +1,4 @@
+string<=512[<=20] up_to_twenty_topics_of_512_chars
+---
+bool success
+uint8 facts_remembered
