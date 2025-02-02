@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <package format="3">
   <name>ltm_pkg</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>ROS2 Long Term Memory Service</description>
   <maintainer email="hopkira@gmail.com">Richard Hopkins</maintainer>
-  <license>Apache </license>
+  <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -17,8 +17,8 @@
 
   <export>
     <build_type>ament_cmake</build_type>
-    <exec_depend>itm_query</exec_depend>
-    <exec_depend>itm_remember</exec_depend>
-    <exec_depend>itm_set_model</exec_depend>
+    <service_interface file="ltm_query.srv"></service_interface>
+    <service_interface file="ltm_remember.srv"></service_interface>
+    <service_interface file="ltm_set_model.srv"></service_interface>
   </export>
 </package>
